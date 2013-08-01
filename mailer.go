@@ -35,6 +35,7 @@ type MailConfig struct {
   attachments map[string][]byte
 }
 
+// just makes less to type in send()
 type H map[string]interface{}
 
 func (m *Mailer) new_config(template_name string, mail_args map[string]interface{}) (MailConfig, error) {
